@@ -1,0 +1,197 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.loginForm p {
+  font-size: larger;
+}
+.loginForm form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  width: 50%;
+  height: 50%;
+}
+.loginForm form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.loginForm form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f1f7f1;
+  width: 100%;
+  padding: 15px;
+  color: rgb(133, 131, 131);
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+.loginForm form button:hover,.loginForm form button:active,.loginForm form button:focus {
+  background: rgb(133, 131, 131);
+  color: #f1f7f1;
+  border-color: rgb(133, 131, 131);
+}
+.passwordIncorrect {
+  color: #ff0000;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.leftPanel{
+  width:20%;
+  background-color: rgb(189, 189, 189);
+  height: 100%;
+  font-size: 20px;
+  text-align: center;  
+}
+
+.leftPanel button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.mainPanel{
+  width: 80%;
+}
+
+.mainPanel p{
+  font-size: 24px;
+  padding: 10px;
+}
+
+.avatarCircle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  background: #fff;
+  border: 2px solid #666;
+  color: #666;
+  text-align: center;
+  font: 80px Arial, sans-serif;
+  margin: 20px auto 0 auto;
+}
+
+/*Modal panel*/
+.modalPanel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(189, 189, 189);
+  opacity: .9;
+}
+
+.modalPanel-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modalPanel {
+  z-index: 100;
+  background: rgb(255, 255, 255);
+  position: relative;
+  margin: 7rem auto;
+  border-radius: 9px;
+  width: 50%;
+  height: 50%;
+  padding: 1rem;
+  border: 1px solid #000 !important;
+}
+
+.modalPanel-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalPanel-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+}
+
+.modalPanel form textarea {
+  width: 100%;
+  resize: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.addNewTaskButton{
+  padding-left: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;  
+}
+
+.deleteTaskButton{
+  margin-left: 10px;
+  height: 24px;
+  line-height: 4px;
+  width: 24px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+}
